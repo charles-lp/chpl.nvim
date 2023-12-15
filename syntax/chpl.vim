@@ -280,6 +280,7 @@ syn keyword chplConstant	nil none
 syn keyword chplRepeat		while for do coforall forall foreach in serial defer
 syn keyword chplLabel	        when otherwise label
 syn keyword chplErrorHandling   throw throws try catch
+syn keyword chplBuiltIn write writeln numLocales here main
 
 " Folding
 syn region scopeFold start="{" end="}" fold transparent
@@ -298,6 +299,7 @@ if version >= 508 || !exists("did_chpl_syntax_inits")
   HiLink chplCast		chplStatement
   HiLink chplErrorHandling	chplStatement
   HiLink chplOperator		Operator
+  HiLink chplBuiltIn    Operator
   HiLink chplStatement		Statement
   HiLink chplIntent		StorageClass
   HiLink chplStorageClass	StorageClass
