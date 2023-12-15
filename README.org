@@ -1,0 +1,24 @@
+  * chpl.nvim
+
+    Basic syntax highlighting for the [[https://chapel-lang.org/][Chapel]] programming language.
+
+    ** Installation
+
+    Using [[https://github.com/folke/lazy.nvim][Lazy.nvim]]:
+
+    #+BEGIN_SRC lua
+    {
+      "charles-lp/chpl.nvim",
+      event = "VeryLazy",
+    },
+    #+END_SRC
+
+    This code segment can be transposed to other plugin managers.
+
+    For manual installation, just put the content of this repository inside =~/.config/nvim/= for neovim users, or =~/.vim/= for vim users.
+    
+    ** Credits
+
+    Scripts have been taken from the [[https://github.com/chapel-lang/chapel][Official Chapel Git Repository]]. Minor modifications to those scripts were made.
+    
+
